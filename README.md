@@ -1,24 +1,10 @@
 ### Create DynamoDB POJO for Book
 
-**Branch name:** annotationsloadsave-prework
-
-**AWS account:** (account number for your <Alias>ATAUnit3 account -- 
-[find on Conduit](https://access.amazon.com/aws/accounts))
- 
-**role:** IibsAdminAccess-DO-NOT-DELETE
-
-**RDE workflows:**
-* `dynamodb-annotations-prework`
-
-Expected time required: 20 min
-
 ### Introduction
 
 You have recently opened a bookstore and want to keep track of all the books in the store. Each book has a unique asin,
 a title, author, and a year that it was published. This is currently represented through the DynamoDB table
 `DynamoDbAnnotationsLoadSave-Books`.
-
-NOTE: This activity uses data in your personal AWS account, not the shared account we've used in class.
 
 ### Deploy the `DynamoDbAnnotationsLoadSave-Books` table
 
