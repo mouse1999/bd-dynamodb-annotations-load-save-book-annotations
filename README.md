@@ -9,13 +9,13 @@ a title, author, and a year that it was published. This is currently represented
 ### Deploy the `DynamoDbAnnotationsLoadSave-Books` table
 
 The `DynamoDbAnnotationsLoadSave-Books` table has already been [designed and implemented 
-in CloudFormation](../../../../../../../../../cloudformation/dynamodbannotationsloadsave/prework/BooksTable.yaml)
+in CloudFormation](../../../../../../../../../cloudformation/BooksTable.yaml)
 but it has not yet been deployed. Your first task will be to deploy the `DynamoDbAnnotationsLoadSave-Books` table to your 
 AWS account and see that it is working.
  
 1. Create the tables we'll be using for this activity by running these aws CLI commands from your Snippets package root:
    ```none
-   aws cloudformation create-stack --region us-west-2 --stack-name dynamodbannotationsloadsave-bookstable01 --template-body file://cloudformation/dynamodbannotationsloadsave/prework/BooksTable.yaml --capabilities CAPABILITY_IAM
+   aws cloudformation create-stack --region us-west-2 --stack-name dynamodbannotationsloadsave-bookstable01 --template-body file://cloudformation/BooksTable.yaml --capabilities CAPABILITY_IAM
    ```
 1. Make sure the `aws cloudformation` command runs without error.
 1. Log into your AWS account and verify that the table exists and has
